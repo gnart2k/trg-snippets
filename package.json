@@ -16,7 +16,11 @@
                         "lua"
                     ],
                     "path": "./snippets/lua.json"
-                }
+                },
+       "language": [
+                        "lua"
+                    ],
+                    "path": "./snippets/java.json"
         ]
      }
  }

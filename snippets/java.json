@@ -1,0 +1,38 @@
+{
+        "trgHibernateEntity": {
+            "prefix": "trgHibernateEntity",
+            "body": [
+'import jakarta.persistence.*;\n'+
+'import lombok.AllArgsConstructor;\n'+
+'import lombok.Getter;\n'+
+'import lombok.NoArgsConstructor;\n'+
+'import lombok.Setter;\n'+
+'\n'+
+'@Entity\n'+
+'@Getter\n'+
+'@Setter\n'+
+'@Table(name = "$1", schema = "$2")\n'+
+'@NoArgsConstructor\n'+
+'@AllArgsConstructor\n'+
+'public class ${TM_FILENAME_BASE} {\n'+
+'  @Id\n'+
+'  @GeneratedValue(strategy = GenerationType.IDENTITY)\n'+
+'  @Column(name = "$3")\n'+
+'  private int ;\n'+
+'\n'+
+'  @ManyToOne()\n'+
+'  @JoinColumn(name = "CINEMA_ROOM_ID", referencedColumnName = "CINEMA_ROOM_ID")\n'+
+'  private CinemaRoom cinemaRoom;\n'+
+'}\n'+
+'';
+            ]
+        },
+        "snip2": {
+            "prefix": "all2",
+            "body": [
+                "multi $1",
+                "line $2",
+                "snippet$0"
+            ]
+        }
+}
