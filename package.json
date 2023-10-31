@@ -18,7 +18,7 @@
                     "path": "./snippets/lua.json"
                 },
        "language": [
-                        "lua"
+                        "java"
                     ],
                     "path": "./snippets/java.json"
         ]
