@@ -17,10 +17,13 @@
                     ],
                     "path": "./snippets/lua.json"
                 },
-       "language": [
+       {
+                    "language": [
                         "java"
                     ],
                     "path": "./snippets/java.json"
+                },
+       
         ]
      }
  }
